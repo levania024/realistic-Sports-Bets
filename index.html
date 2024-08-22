@@ -12,9 +12,110 @@
     <title>Realistic Sports Bets</title>
 </head>
 
-<body>
+<body class="hero-bg">
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <nav class="text-light">
+                    <h1>ERSB</h1>
+                    <p>Extremely Realistic Sports Bets</p>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <hr />
+
+    <main class="container-fluid">
+        <section class="row text-light text-center justify-content-center align-items-center fs-3">
+            <div class="col-md-6">
+                <label for="Bank">Bank</label>
+                <div id="Amount" onclick="betBtn()" class="btn d-flex text-light bg-success bg-gradient p-4">
+                </div>
+            </div>
+        </section>
+
+        <!-- NOTE Team 1 -->
+        <section class="row text-light text-center align-items-center justify-content-center g-5">
+            <div class="col-md-4">
+                <label class="mt-5 pt-3 px-2" for="Team1">Team 1</label>
+                <div id="team1" onclick="drawTeam1()" class="btn d-flex  broder border-2 text-light bg-black p-4">
+                </div>
+            </div>
+
+            <!-- NOTE Team 2 -->
+            <div class="col-md-4 text-center">
+                <label class="mt-5 pt-3 px-2" for="Team2">Team 2</label>
+                <div id="team2" onclick="drawTeam2()" class="btn d-flex  broder border-2 text-light bg-black p-4">
+                </div>
+            </div>
+        </section>
 
 
+        <!-- NOTE Team 1 -->
+        <div class="d-flex flex-row">
+            <section class="row">
+                <div class="col-md-4">
+                    <div onclick="teamMemberRD()" class="btn text-light bg-danger bg-gradient p-3 mt-3 mx-5">
+                        <p class="text-black text-center">bet 5</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div onclick="teamMemberRD()" class="btn text-light bg-danger bg-gradien p-3 mt-3">
+                        <p class="text-black text-center">bet 25</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div onclick="teamMemberRD()" class="btn bg-danger bg-gradien p-3 mt-3">
+                        <p class="text-black text-center">bet 100</p>
+                    </div>
+                </div>
+
+
+                <!-- NOTE Team 1 -->
+                <div class="col-md-3">
+                    <div onclick="betBtn()" class="btn text-light bg-danger bg-gradien p-3 mt-3 flex-wrap">
+                        <p class="text-black text-center">bet it all</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- NOTE Team 2 -->
+        <div class="d-flex flex-row-reverse">
+            <section class="row">
+                <div class="col-md-4">
+                    <div onclick="teamMemberRD()" class="btn text-light bg-info bg-gradient p-3">
+                        <p class="text-black text-center">bet 5</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div onclick="teamMemberRD()" class="btn text-light bg-info bg-gradient p-3">
+                        <p class="text-black text-center">bet 25</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div onclick="teamMemberRD()" class="btn bg-info bg-gradient p-3">
+                        <p class="text-black text-center">bet 100</p>
+                    </div>
+                </div>
+
+                <!-- NOTE Team 2 -->
+                <div class="col-md-3">
+                    <div onclick="betBtn()" class="btn text-light bg-info bg-gradient p-3 mt-3">
+                        <p class="text-black text-center">bet it all</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
 
 
     <script src="app.js"></script>
